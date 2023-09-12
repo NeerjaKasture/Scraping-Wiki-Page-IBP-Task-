@@ -1,7 +1,0 @@
-url = 'https://en.wikipedia.org/wiki/Demographics_of_India'
-df = pd.read_html(url,match='Rank',skiprows=[37])[0]
-table=df[['State/UT','Population[59]']]
-table.plot(x='State/UT',y='Population[59]',kind='bar')
-plt.xlabel("State/UT")
-plt.ylabel("Population")
-plt.title("Population distribution by states/union territories (2011)")
